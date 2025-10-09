@@ -13,7 +13,7 @@ export default function HowItWorks() {
             { title: "Compartilhe e aprenda", desc: "Discuta casos, publique insights e evolua todo dia." },
           ].map((step, i) => (
             <li key={i} className="rounded-2xl border border-zinc-200 p-6 shadow-sm dark:border-zinc-800">
-              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-sm font-bold text-white">{i + 1}</div>
+              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600 text-sm font-bold text-white">{i + 1}</div>
               <h4 className="text-lg font-semibold">{step.title}</h4>
               <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{step.desc}</p>
             </li>

@@ -24,8 +24,7 @@ export default function Navbar() {
           <a href="#depoimentos" className="hover:opacity-80">Depoimentos</a>
         </nav>
         <div className="flex items-center gap-2">
-          <ThemeToggle />
-          <a href="#cta" className="rounded-2xl bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-indigo-500">Registrar</a>
+          <a href="#cta" className="rounded-2xl bg-primary-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-primary-500">Download</a>
         </div>
       </div>
     </header>

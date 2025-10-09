@@ -1,4 +1,6 @@
-import { CheckIcon } from "@/components/icons";
+import { CheckIcon } from "@/components/Icons";
+
+import Image from "next/image";
 
 export default function Security() {
   return (
@@ -17,7 +19,16 @@ export default function Security() {
         </div>
         <div aria-hidden className="grid grid-cols-2 gap-4">
           {[1,2,3,4].map(n => (
-            <div key={n} className="aspect-[4/3] w-full rounded-xl bg-zinc-200 dark:bg-zinc-800" />
+            <div key={n} className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-zinc-200 dark:bg-zinc-800">
+              <Image
+                src={`/public-images/${n}.jpg`}
+                alt={`Segurança ${n}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority={n === 1}
+              />
+            </div>
           ))}
         </div>
       </div>

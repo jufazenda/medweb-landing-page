@@ -1,3 +1,30 @@
 @import "tailwindcss";
 
-html { scroll-behavior: smooth; }
+/* Configuração do dark mode para v4 */
+@theme {
+  --color-primary-50: #f5f0fe;
+  --color-primary-100: #ede3fd;
+  --color-primary-200: #d7bafc;
+  --color-primary-300: #be8dfb;
+  --color-primary-400: #a55ef9;
+  --color-primary-500: #8737f7;
+  --color-primary-600: #6d28d9;
+  --color-primary-700: #581cbe;
+  --color-primary-800: #47159c;
+  --color-primary-900: #39117d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Força o dark mode a funcionar */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
